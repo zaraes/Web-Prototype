@@ -1,0 +1,151 @@
+/* grid? */
+// main grid
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 2px auto auto auto auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    "stroke stroke stroke stroke stroke stroke"
+    "display-img display-img display-img display-img display-img display-img"
+    "section-1 section-1 section-1 section-1 section-1 section-1"
+    "section-2 section-2 section-2 section-2 section-2 section-2"
+    "section-3 section-3 section-3 section-3 section-3 section-3"
+    "section-4 section-4 section-4 section-4 section-4 section-4"
+    "section-5 section-5 section-5 section-5 section-5 section-5"
+    ". . . . . .";
+}
+
+//section1 grid
+/* .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Who-we-are Who-we-are donation donation"
+    "Who-we-are Who-we-are donation donation"
+    "image-1 image-2 donation-text donation-text";
+} */
+
+// nav bar
+nav { 
+  grid-area: nav;
+  background-color: whitesmoke; 
+  stroke: black;
+} 
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav li {
+  display: inline-block;
+} 
+nav li img {
+  width: 6em;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  
+}
+
+button {
+  background-color: #495867;
+  border: none;
+  padding: 8px 8px;
+  text-align: center;
+  border-radius: 25px;
+  color: white;
+} 
+
+.button5 {
+  background-color: #CE796B;
+}
+
+.stroke {
+  grid-area: stroke;
+  background-color: black;
+}
+
+// display image
+#display-img { 
+  grid-area: display-img;
+}
+
+#display-img li {
+  display: inline-block;
+  
+}
+
+#display-img ul {
+    text-align: center;
+  list-style: inside;
+}
+
+#display-img img {
+  width: 6em;
+}
+
+// section 1
+
+
+/* #Who-we-are { 
+  grid-area: Who-we-are; 
+  background-color: pink;
+}
+
+#image-1 { 
+  grid-area: image-1; 
+  background-color: purple;
+}
+
+#image-2 { 
+  grid-area: image-2; 
+  background-color: yellow;
+}
+
+#donation-text { 
+  grid-area: donation-text;
+  background-color: green;
+}
+
+#donation { 
+  grid-area: donation; 
+  background-color: black;
+}
+ */
+
+
+
+
+#section-1 { 
+  grid-area: section-1;
+  background-color: pink;
+}
+
+#section-2 { 
+  grid-area: section-2;
+  background-color: red;
+}
+
+#section-3 { 
+  grid-area: section-3;
+  background-color: purple;
+}
+
+#section-4 { 
+  grid-area: section-4;
+  background-color: green;
+}
+
+#section-5 { 
+  grid-area: section-5;
+  background-color: orange;
+}
+
+/* grid? */
