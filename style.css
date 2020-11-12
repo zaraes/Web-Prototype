@@ -1,5 +1,4 @@
 /* grid? */
-// main grid
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -17,19 +16,7 @@
     ". . . . . .";
 }
 
-//section1 grid
-/* .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "Who-we-are Who-we-are donation donation"
-    "Who-we-are Who-we-are donation donation"
-    "image-1 image-2 donation-text donation-text";
-} */
-
-// nav bar
+/* nav bar */
 nav { 
   grid-area: nav;
   background-color: whitesmoke; 
@@ -40,7 +27,6 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
 }
 
 nav li {
@@ -72,7 +58,8 @@ button {
   background-color: black;
 }
 
-// display image
+
+/* display image */
 #display-img { 
   grid-area: display-img;
 }
@@ -83,15 +70,15 @@ button {
 }
 
 #display-img ul {
-    text-align: center;
+  text-align: center;
   list-style: inside;
 }
 
 #display-img img {
   width: 6em;
 }
-
-// section 1
+/* 
+// section 1 */
 
 
 /* #Who-we-are { 
